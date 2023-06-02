@@ -15,7 +15,7 @@ import string
 
 PUNCTUATION = string.punctuation
 
-def remove_punctuation(text):
+def remove_punctuation(text: str) -> str:
     """
     Remove punctuation marks from the text.
 
@@ -30,7 +30,7 @@ def remove_punctuation(text):
         cleaned_text = cleaned_text.replace(char, "")
     return cleaned_text
 
-def calculate_average_word_length(text):
+def calculate_average_word_length(text: str) -> float:
     """
     Calculate the average word length in the text.
 
@@ -46,7 +46,7 @@ def calculate_average_word_length(text):
     average_word_length = sum(words_lengths) / len(words_lengths)
     return average_word_length
 
-def main():
+def main() -> None:
     """
     The main function of the program.
 
