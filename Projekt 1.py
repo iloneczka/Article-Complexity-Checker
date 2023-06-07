@@ -41,9 +41,12 @@ def calculate_average_word_length(text: str) -> float:
     - float: The average word length.
     """
     words = remove_punctuation(text).split()
-    words_without_numbers = [w for w in words if not w.isnumeric()]
-    words_lengths = [len(w) for w in words_without_numbers]
-    average_word_length = sum(words_lengths) / len(words_lengths)
+    words_lengths = [len(w) for w in words if not w.isnumeric()]
+    if len(words_lengths) == 0:
+        average_word_length= 0
+        print(average_word_length)
+    else:
+        average_word_length = sum(words_lengths) / len(words_lengths)
     return average_word_length
 
 def main() -> None:
