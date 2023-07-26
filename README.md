@@ -42,7 +42,7 @@ To run the project locally, follow these steps:
 python3 article_complexity_checker.py
 ```
 
-## Testing for Development
+## Testing
 
 To ensure the correctness of the `article_complexity_checker.py` module, we have created a test suite in `test_article_complexity_checker.py` using pytest. 
 The test cases cover different scenarios to verify the `calculate_average_word_length()` and `remove_punctuation()` functions.
@@ -62,7 +62,6 @@ pip3 install pytest
 ```
 pytest test_article_complexity_checker.py
 ```
-
 
 ## Solutions
 
