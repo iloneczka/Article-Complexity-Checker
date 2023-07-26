@@ -1,5 +1,5 @@
 """
-BBC Article Complexity Checker
+Article Complexity Checker
 
 This program calculates the complexity of articles and posts, allowing journalists to parameterize their work
 and automatically determine whether they are writing simple and easy-to-understand texts.
@@ -42,12 +42,13 @@ def calculate_average_word_length(text: str) -> float:
     """
     words = remove_punctuation(text).split()
     words_lengths = [len(w) for w in words if not w.isnumeric()]
+    print(words, words_lengths)
     if len(words_lengths) == 0:
         average_word_length= 0
         print(average_word_length)
     else:
         average_word_length = sum(words_lengths) / len(words_lengths)
-    return average_word_length
+    return round(average_word_length, 1)
 
 def main() -> None:
     """
