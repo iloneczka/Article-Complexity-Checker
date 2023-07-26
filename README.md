@@ -28,7 +28,7 @@ To run the project locally, follow these steps:
 - Navigate to the project directory.
 - Run the program:
 ```
-python article_complexity_checker.py
+python3 article_complexity_checker.py
 ```
 
 ## Solutions
