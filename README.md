@@ -8,7 +8,6 @@
 * [Setup](#setup)
 * [Testing for Development](#testing-for-evelopment)
 * [Solutions](#solutions)
-* [Tools and Plugins](#tools-and-plugins)
 * [Future Plans](#future-plans)
 * [Inspirations and Acknowledgments](#inspirations-and-acknowledgments)
 
@@ -80,9 +79,6 @@ def remove_punctuation(text: str) -> str:
         cleaned_text = cleaned_text.replace(char, "")
     return cleaned_text
 ```
-## Tools and Plugins
-
-The program uses the standard Python library and does not require any additional tools or plugins.
 
 ## Future Plans
 
