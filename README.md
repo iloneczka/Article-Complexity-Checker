@@ -1,6 +1,18 @@
 # Article Complexity Checker
 
-## Description
+## Table of contents
+* [General info](#general-info)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Prerequisites](#prerequisites)
+* [Setup](#setup)
+* [Testing for Development](#testing-for-evelopment)
+* [Solutions](#solutions)
+* [Tools and Plugins](#tools-and-plugins)
+* [Future Plans](#future-plans)
+* [Inspirations and Acknowledgments](#inspirations-and-acknowledgments)
+
+## General info
 
 The "Article Complexity Checker" program calculates the complexity of articles and text posts, enabling journalists to parameterize their work and automatically determine whether they are writing simple and easy-to-understand texts. It calculates the average word length and displays the result.
 
@@ -20,7 +32,7 @@ The program is written in Python.
 
 To run this project, make sure you have Python 3.11.2 installed on your computer.
 
-## Installation
+## Setup
 
 To run the project locally, follow these steps:
 
@@ -30,6 +42,19 @@ To run the project locally, follow these steps:
 ```
 python3 article_complexity_checker.py
 ```
+
+## Testing for Development
+
+To ensure the correctness of the `article_complexity_checker.py` module, we have created a test suite in `test_article_complexity_checker.py` using pytest. 
+The test cases cover different scenarios to verify the `calculate_average_word_length()` and `remove_punctuation()` functions.
+
+You can run the tests using pytest by running the following command in the terminal:
+```
+pytest test_article_complexity_checker.py
+```
+
+These tests will help ensure that the functions in `article_complexity_checker.py` work correctly and return the expected results. If any of the tests fail, it will help identify any issues that need to be addressed in the code.
+
 
 ## Solutions
 
@@ -50,11 +75,7 @@ def remove_punctuation(text: str) -> str:
 
 The program uses the standard Python library and does not require any additional tools or plugins.
 
-## Reusable Parts of the Project
-
-The project does not feature specific reusable parts as it is relatively small and focused on a single task - calculating the average word length.
-
-## Future Insights / Project Development Plans
+## Future Plans
 
 - Implement the ability to calculate other text statistics, such as the average sentence length, the number of unique words, etc.
 - Create a user interface for inputting and analyzing multiple articles at once.
