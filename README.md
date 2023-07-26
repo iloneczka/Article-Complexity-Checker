@@ -48,12 +48,21 @@ python3 article_complexity_checker.py
 To ensure the correctness of the `article_complexity_checker.py` module, we have created a test suite in `test_article_complexity_checker.py` using pytest. 
 The test cases cover different scenarios to verify the `calculate_average_word_length()` and `remove_punctuation()` functions.
 
-You can run the tests using pytest by running the following command in the terminal:
+These tests will help ensure that the functions in `article_complexity_checker.py` work correctly and return the expected results. If any of the tests fail, it will help identify any issues that need to be addressed in the code.
+
+### Running Tests
+To run the tests, follow these steps:
+
+1. Install pytest if you haven't already, by:
+``` 
+pip3 install pytest
+```
+2. Navigate to the project directory.
+
+3. Run the tests by running the following command in the terminal:
 ```
 pytest test_article_complexity_checker.py
 ```
-
-These tests will help ensure that the functions in `article_complexity_checker.py` work correctly and return the expected results. If any of the tests fail, it will help identify any issues that need to be addressed in the code.
 
 
 ## Solutions
