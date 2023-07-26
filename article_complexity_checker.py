@@ -1,5 +1,5 @@
 """
-BBC Article Complexity Checker
+Article Complexity Checker
 
 This program calculates the complexity of articles and posts, allowing journalists to parameterize their work
 and automatically determine whether they are writing simple and easy-to-understand texts.
