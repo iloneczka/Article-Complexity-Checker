@@ -6,33 +6,28 @@
 * [Technologies Used](#technologies-used)
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
-* [Testing for Development](#testing-for-evelopment)
+* [Testing](#testing)
 * [Solutions](#solutions)
 * [Future Plans](#future-plans)
 * [Inspirations and Acknowledgments](#inspirations-and-acknowledgments)
 
 ## General info
-
 The "Article Complexity Checker" program calculates the complexity of articles and text posts, enabling journalists to parameterize their work and automatically determine whether they are writing simple and easy-to-understand texts. It calculates the average word length and displays the result.
 
 ## Features
-
 - Calculate the average word length in the text.
 - Remove punctuation marks from the text before calculating the average.
 - Exclude words consisting solely of numbers from the calculation.
 
 ## Technologies Used
-
 The program is written in Python.
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
 ## Prerequisites
-
 To run this project, make sure you have Python 3.11.2 installed on your computer.
 
 ## Setup
-
 To run the project locally, follow these steps:
 
 - Clone this repository to your local machine.
@@ -43,7 +38,6 @@ python3 article_complexity_checker.py
 ```
 
 ## Testing
-
 To ensure the correctness of the `article_complexity_checker.py` module, we have created a test suite in `test_article_complexity_checker.py` using pytest. 
 The test cases cover different scenarios to verify the `calculate_average_word_length()` and `remove_punctuation()` functions.
 
@@ -80,11 +74,9 @@ def remove_punctuation(text: str) -> str:
 ```
 
 ## Future Plans
-
 - Implement the ability to calculate other text statistics, such as the average sentence length, the number of unique words, etc.
 - Create a user interface for inputting and analyzing multiple articles at once.
 - Support various languages and character sets.
 
 ## Inspirations and Acknowledgments
-
 The program was adapted during the "Practical Python" training course. Thanks for the inspiring material and support!
